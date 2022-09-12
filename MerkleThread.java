@@ -22,7 +22,7 @@ public class MerkleThread implements Runnable
                 System.out.println("[merkle] Word Grabbed");
                 lstWords.add(sNewWord);
 
-                if(lstWords.equals(iMerkleTreeInputs))
+                if(lstWords.size() == iMerkleTreeInputs)
                 {
                     MerkleManager.sMerkleRoot = oUtil.getMerkleRoot(lstWords);
                 }

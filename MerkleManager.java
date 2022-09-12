@@ -8,7 +8,7 @@ public class MerkleManager {
     public void manage(){
 
         Util util1 = new Util();
-        expectedRoot = util1.promptUser("Expected merkle root:");
+        expectedRoot = util1.promptUser("Expected merkle root: Use https://xorbin.com/tools/sha256-hash-calculator");
 
         MerkleThread merkle1 = new MerkleThread();
         Thread merkThread = new Thread(merkle1);
