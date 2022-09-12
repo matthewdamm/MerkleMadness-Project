@@ -8,7 +8,7 @@ public class MerkleManager {
     public void manage(){
 
         Util util1 = new Util();
-        util1.promptUser("Expected merkle root:");
+        expectedRoot = util1.promptUser("Expected merkle root:");
 
         MerkleThread merkle1 = new MerkleThread();
         Thread merkThread = new Thread(merkle1);
@@ -26,7 +26,7 @@ public class MerkleManager {
 
         while(true){
             Util util2 = new Util();
-            util2.promptUser("Enter a word:");
+            enterWord = util2.promptUser("Enter a word:");
         }
     }
 
