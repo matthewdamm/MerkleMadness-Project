@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class MerkleThread implements Runnable
 {
-    String sThreadName1;
+    String sThreadName1 = "Merkle";
     public static volatile ArrayList<String>lstWords;
     private int iMerkleTreeInputs = 4;
 

@@ -1,5 +1,7 @@
 public class RogueThread implements Runnable {
 
+    String sThreadName1 = "Rogue";
+
     public void run() {
         Util oUtil = new Util();
 
@@ -7,7 +9,7 @@ public class RogueThread implements Runnable {
 
         while (true) {
 
-            oUtil.sleepRandomTime("threadName");
+            oUtil.sleepRandomTime(sThreadName1);
 
             String sNewWord = MerkleManager.grabWord();
 
