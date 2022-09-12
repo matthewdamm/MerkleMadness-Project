@@ -1,8 +1,8 @@
 public class MerkleManager {
 
     public static volatile String enterWord;
-    public static String expectedMerkleRoot;
-    public static  String merkleRoot = null;
+    public static String expectedRoot;
+    public static  String sMerkleRoot = null;
     public static int strikes = 0;
 
     public void manage(){

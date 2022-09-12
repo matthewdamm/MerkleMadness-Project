@@ -67,7 +67,7 @@ public class Util {
         System.out.println(sThreadName + " sleeping for " + iSleepTime + " seconds.");
         sleep(iSleepTime);
     }
-    private void sleep(int iSeconds){
+    public void sleep(int iSeconds){
         try{
             Thread.sleep(iSeconds*1000);
 
